@@ -1,0 +1,12 @@
+name: My-first-workflow
+
+on:
+  push:
+    branch: [ main ]
+
+jobs:
+  first_job:
+    runner: ubuntu-latest
+    steps:
+       - name: this is my first steps:
+         run: echo "my name is Kaushik"
