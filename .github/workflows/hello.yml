@@ -2,11 +2,11 @@ name: My-first-workflow
 
 on:
   push:
-    branch: [ main ]
+     branches: [ main ]
 
 jobs:
   first_job:
-    runner: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-       - name: this is my first steps:
-         run: echo "my name is Kaushik"
+      - name: this is my first steps
+        run: echo "my name is Kaushik"
