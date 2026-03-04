@@ -9,5 +9,7 @@ jobs:
   sayMyName:
     runs-on: ubuntu-latest
     steps:
-     - name: call my name
-       run: echo "my name is Kaushik!!"
+      - name: call my name
+        run: echo "my name is Kaushik!!"
+      - name: print the runner name
+        run: echo "name of runner is $USER"
