@@ -1,0 +1,13 @@
+name: myfirstworkflow
+
+on:
+  push:
+    branches:
+        - main
+
+jobs:
+  sayMyName:
+    runs-on: ubuntu-latest
+    steps:
+     - name: call my name
+       run: echo "my name is Kaushik!!"
