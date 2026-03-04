@@ -2,6 +2,17 @@ name: CICD-test
 
 on:
   workflow_dispatch:
+        inputs:
+          environments:
+            description: Please select the environment type
+            default: "dev"
+            required: true
+            type: choice
+            options:
+                  - dev
+                  - qa
+                  - prod
+            
 
 jobs:
   code:
